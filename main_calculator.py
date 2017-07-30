@@ -110,8 +110,9 @@ class button(Button):
         def insert_text(self):
             textbox.insert(INSERT,button_title)
         def clear_screen(self):
-            textbox.delete(0.0, END)
-            textbox.insert(0.0, "0\n")
+            textbox.delete(0, END)
+            textbox.insert(0, "0")
+            label['text']="Welcome"
         def calculator_calling(self):
             main_string=textbox.get()
             textbox.delete(0,END)
